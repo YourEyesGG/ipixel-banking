@@ -280,3 +280,9 @@ function DisplayHelpText(str)
 	AddTextComponentString(str)
 	DisplayHelpTextFromStringLabel(0, 0, 1, -1)
 end
+
+RegisterNetEvent('ipixel-drugs:AntiExploit')
+AddEventHandler('ipixel-drugs:AntiExploit', function(source, msg)
+	StartScreenEffect('CamPushInNeutral', 10000, false)
+	ESX.Scaleform.ShowFreemodeMessage('~r~iPixel Anti Exploit', msg .. '\nWarning System + 1\nYourEyes#6866 Anti Exploit', 10)
+end)
